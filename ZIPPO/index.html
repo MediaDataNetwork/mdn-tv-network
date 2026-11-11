@@ -1,0 +1,25 @@
+<!doctype html>
+<html lang="en"><head><meta charset="UTF-8"><meta name="viewport" content="width=device-width,initial-scale=1">
+<meta name="theme-color" content="#0b1019"><meta name="description" content="Media Data Network Television — shows, channels, news and on-demand programming.">
+<link rel="manifest" href="./manifest.webmanifest"><link rel="apple-touch-icon" href="./icon-192.png"><title>MDN TV | Media Data Network Television</title><link rel="stylesheet" href="./styles.css"></head>
+<body>
+<a class="skip" href="#main">Skip to content</a>
+<div class="app">
+<aside class="sidebar" id="sidebar">
+<a class="brand" href="#home" aria-label="MDN TV home"><span class="mark">▶</span><span>MDN<span class="brand-red">TV</span><small>MEDIA DATA NETWORK</small></span></a>
+<div class="nav-label">DISCOVER</div>
+<nav id="nav" aria-label="Main navigation"></nav>
+<div class="side-bottom"><span class="on-demand-dot"></span> On-demand network<br><small>Live only when a source is confirmed</small></div>
+</aside>
+<div class="content-shell">
+<header class="topbar">
+<button class="icon-button menu-button" id="menuBtn" aria-label="Open navigation">☰</button>
+<a class="mobile-brand" href="#home">▶ MDN<span>TV</span></a>
+<label class="searchbox" for="search"><span aria-hidden="true">⌕</span><input id="search" type="search" placeholder="Search shows, channels and videos…" autocomplete="off"><kbd>/</kbd></label>
+<div class="header-actions"><a class="chip" href="#guide">▦ Guide</a><a class="studio-link" href="https://securevault.host/tv/admin" target="_blank" rel="noopener noreferrer">Studio ↗</a></div>
+</header>
+<main id="main" tabindex="-1" aria-live="polite"></main>
+<footer class="footer"><span>© 2026 Media Data Network · MDN TV</span><div><a href="https://mediadatanetwork.com/" target="_blank" rel="noopener noreferrer">Network site ↗</a><a href="https://securevault.host/tv" target="_blank" rel="noopener noreferrer">Current station ↗</a></div></footer>
+</div></div>
+<div id="toast" role="status" aria-live="polite" class="toast" hidden></div>
+<script src="./app.js" defer></script><script>if("serviceWorker" in navigator && location.protocol !== "file:"){window.addEventListener("load",()=>navigator.serviceWorker.register("./sw.js").catch(()=>{}));}</script></body></html>
